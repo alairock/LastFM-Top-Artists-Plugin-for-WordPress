@@ -1,7 +1,8 @@
 <?php
+
 /**
  * Plugin Name: LastFM Top 5 
- * Plugin URI: http://sixteenink.com
+ * Plugin URI: http://github.com/alairock/LastFM-Top-Artists-Plugin-for-WordPress
  * Description: Displays the top 5 LastFM artists for a particular user.
  * Version: 0.1
  * Author: alairock
@@ -20,7 +21,7 @@ class LastFMTop50Widget extends WP_Widget {
     $latestx = $instance['latestx'];
 ?>
         <p><label for="<?php echo $this->get_field_id('username'); ?>">Username: <input class="widefat" id="<?php echo $this->get_field_id('username'); ?>" name="<?php echo $this->get_field_name('username'); ?>" type="text" value="<?php echo attribute_escape($username); ?>" /></label></p>
-        <p><label for="<?php echo $this->get_field_id('latestx'); ?>">latestx: <input class="widefat" id="<?php echo $this->get_field_id('latestx'); ?>" name="<?php echo $this->get_field_name('latestx'); ?>" type="text" value="<?php echo attribute_escape($latestx); ?>" /></label></p>
+        <p><label for="<?php echo $this->get_field_id('latestx'); ?>">Number of Artists to show: <input class="widefat" id="<?php echo $this->get_field_id('latestx'); ?>" name="<?php echo $this->get_field_name('latestx'); ?>" type="text" value="<?php echo attribute_escape($latestx); ?>" /></label></p>
 
 
 
